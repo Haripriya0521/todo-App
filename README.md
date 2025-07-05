@@ -1,35 +1,12 @@
-# todo-App
-“This project is a part of a hackathon run by https://www.katomaran.com"
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-**ARCHITECTURE DIAGRAM:**
-┌─────────────────────────────┐
-│      React Native App       │
-│  (Expo + Expo Router)       │
-│                             │
-│  • Google OAuth Login       │
-│  • Task List UI             │
-│  • FAB, Animations, etc.    │
-│                             │
-│      Axios API Calls        │
-└──────────────┬──────────────┘
-               │
-         HTTPS REST API
-               │
-┌──────────────▼──────────────┐
-│    Node.js / Express API    │
-│                             │
-│ • Routes:                   │
-│   - GET /api/todos          │
-│   - POST /api/todos         │
-│   - PUT /api/todos/:id      │
-│   - DELETE /api/todos/:id   │
-│                             │
-│ In-memory Array of Tasks    │
-└──────────────┬──────────────┘
-               │
-         No Database
+Currently, two official plugins are available:
 
-DEMO VIDEO LINK = "https://drive.google.com/file/d/1pjwatWs4XwvBSSMSbCB3OH68GNd_LjQ_/view?usp=sharing"
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
 
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
